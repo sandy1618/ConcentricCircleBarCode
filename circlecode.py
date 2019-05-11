@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("E:/x/CircleCode/images/4.jpg", 0)
+img = cv2.imread("./images/circle.jpg", 0)
 img = cv2.medianBlur(img, 11)
 # cimg=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 #ret,tresh1=cv2.threshold(img,127,255,cv2.THRESH_BINARY)
