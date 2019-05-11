@@ -1,12 +1,13 @@
 import cv2
 import numpy as np 
 #mat img = cv2.imread
-img = cv2.imread("E:/x/CircleCode/images/2.jpg",cv2.IMREAD_UNCHANGED)
+img = cv2.imread("E:/x/CircleCode/images/4.jpg",0)
 #cv2.imshow("before", img)
 
-
-
-
+ret,tresh1=cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+cv2.imshow('detected circles', tresh1)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 '''tpx=img.shape
